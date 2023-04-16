@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using WalletServices.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +9,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// service automapper
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+// service interface product repo
+builder.Services.AddScoped<IWalletRepo, WalletRepo>();
+
+// seed db service
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
 
 var app = builder.Build();
 
@@ -21,5 +33,9 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
+//jalankan seedaing data
+PrepDb.PrepPopulation(app);
 
 app.Run();
