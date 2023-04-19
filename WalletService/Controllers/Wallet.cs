@@ -7,7 +7,7 @@ using WalletServices.Models;
 
 namespace WalletServices.Controllers
 {
-    [Route("api/v1/wallet/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class WalletController : ControllerBase
     {
@@ -30,7 +30,7 @@ namespace WalletServices.Controllers
         }
 
         [HttpGet("{name}", Name = "GetByWalletName")]
-        public async Task<ActionResult> GetByProductId(string name)
+        public async Task<ActionResult> GetByWalletName(string name)
         {
             var wallet = await _repo.GetByName(name);
             var readWallet = _mapper.Map<ReadWalletDto>(wallet);

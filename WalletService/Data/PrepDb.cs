@@ -28,7 +28,7 @@ namespace WalletServices.Data
                     {
                         UserName = "Arka",
                         FullName = "Arkatama Ardelio",
-                        Cash = 80000
+                        Cash = 60
                     },
                     new Wallet()
                     {

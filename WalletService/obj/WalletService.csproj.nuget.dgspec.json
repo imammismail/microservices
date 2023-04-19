@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj": {}
+    "c:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj": {}
   },
   "projects": {
-    "C:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj": {
+    "c:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj",
+        "projectUniqueName": "c:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj",
         "projectName": "WalletService",
-        "projectPath": "C:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj",
+        "projectPath": "c:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\WalletService.csproj",
         "packagesPath": "C:\\Users\\Rapidtech\\.nuget\\packages\\",
-        "outputPath": "C:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\obj\\",
+        "outputPath": "c:\\Dotnet_workspace\\Microservices\\tugas\\WalletService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rapidtech\\AppData\\Roaming\\NuGet\\NuGet.Config",
