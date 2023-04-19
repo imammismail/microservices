@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj": {}
+    "c:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj": {}
   },
   "projects": {
-    "C:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj": {
+    "c:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj",
+        "projectUniqueName": "c:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj",
         "projectName": "ProductService",
-        "projectPath": "C:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj",
+        "projectPath": "c:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\ProductService.csproj",
         "packagesPath": "C:\\Users\\Rapidtech\\.nuget\\packages\\",
-        "outputPath": "C:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\obj\\",
+        "outputPath": "c:\\Dotnet_workspace\\Microservices\\tugas\\ProductService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rapidtech\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -36,6 +36,14 @@ namespace ProductServices.Controllers
             return Ok(readProduct);
         }
 
+        [HttpGet("{name}/nameproduct", Name = "GetByProductName")]
+        public async Task<ActionResult> GetByProductName(string name)
+        {
+            var wallet = await _repo.GetByName(name);
+            var readWallet = _mapper.Map<ReadProductDto>(wallet);
+            return Ok(readWallet);
+        }
+
         [HttpPut("{id}")]
         public async Task<ActionResult> UpdateProduct(int id, UpdateProductDto updateProductDto)
         {
@@ -70,9 +78,9 @@ namespace ProductServices.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ReadProductDto>> CreateProduct(CreateProductDto CreateProductDto)
+        public async Task<ActionResult<ReadProductDto>> CreateProduct(CreateProductDto createProductDto)
         {
-            var productModel = _mapper.Map<Product>(CreateProductDto);
+            var productModel = _mapper.Map<Product>(createProductDto);
             _repo.CreateProduct(productModel);
             _repo.SaveChanges();
             var readProductDto = _mapper.Map<ReadProductDto>(productModel);
